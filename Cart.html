@@ -6,30 +6,34 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Shopping cart</title>
-	<link rel="stylesheet" href="Electronic_store.css">
-	<link rel="stylesheet" href="cart.css">
-	<link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+	<link rel="stylesheet" href="style/global.css">
+	<link rel="stylesheet" href="style/cart.css">
+	<link rel="shortcut icon" type="image/png" href="img/favicon.png">
 </head>
 
 <body>
-	<div class="header">
-		<h1>Electronics Store</h1>
-		<a href="file:///C:/Users/Artur/Desktop/Web%20design/Cart.html">
+	<header>
+		<a href="index.html">
+			<h1>Electronics Store</h1>
+		</a>
+		<a href="cart.html">
 			<div class="cart">
 				<i class="fas fa-cart-plus">
 					<div class="circle" id="orders">0</div>
 				</i>
 			</div>
 		</a>
-	</div>
-	<div id="cartList"></div>
-	<div id="total">
-		<p>Всього товарів на </p>
-		<span id="sumCart"></span>
-		<p> гривень.</p>
-		<button onclick="buyAll()">Придбати</button>
-	</div>
-	<footer class="info">
+	</header>
+	<main>
+		<div id="cartList"></div>
+		<div id="total">
+			<p>Всього товарів на </p>
+			<span id="sumCart"></span>
+			<p> гривень.</p>
+			<button onclick="buyAll()">Придбати</button>
+		</div>
+	</main>
+	<footer>
 		<div>
 			<p>+380678932881</p>
 			<p>+380934773547</p>
@@ -39,7 +43,8 @@
 			<p>Lviv, Saharova 25</p>
 		</div>
 	</footer>
-	<script src="Cart.js"></script>
+	<script src="https://kit.fontawesome.com/89b7791523.js" crossorigin="anonymous"></script>
+	<script src="script/cart.js"></script>
 </body>
 
 </html>

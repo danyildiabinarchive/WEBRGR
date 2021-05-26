@@ -19,7 +19,7 @@ buttonSum.innerText = `${Math.round(totalSum)}`;
 
 list.innerHTML = setArr.map((product, index) =>
 	`<div class="product">
-		<img src=img/${product.image} alt="" class="shablon">
+		<img src=${product.image} class="shablon">
 		<div class="content">
 		<div class="desc">
 		<p>Name: ${product.name}</p>
@@ -29,7 +29,7 @@ list.innerHTML = setArr.map((product, index) =>
 		<button class="add">+</button>   
 		<span class="span">${array[product.name]}</span>
 		<button class="minus">-</button>
-		<button class="delete">delete</button>
+		<button class="delete">Видалити</button>
 		</div>
 		</div>
 	</div>`
@@ -70,7 +70,7 @@ products.forEach((product, index) => (
 				}
 			})
 			totalSum -= setArr[index].price;
-			buttonSum.innerText = `${Math.round(totalSum)}`;
+			buttonSum.innerText = `${Math.ceil(totalSum)}`;
 			localStorage.setItem('cartArray', JSON.stringify(updatedArr))
 		}
 	})

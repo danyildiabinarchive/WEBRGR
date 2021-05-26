@@ -6,41 +6,49 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>LED Lamps Store</title>
-	<script src="https://kit.fontawesome.com/89b7791523.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="Electronic_store.css">
+	<link rel="stylesheet" href="style/global.css">
+	<link rel="stylesheet" href="style/main.css">
+	<link rel="shortcut icon" type="image/png" href="img/favicon.png">
 </head>
 
 <body>
-	<header class="header">
-		<h1>Electronics Store</h1>
-		<a href="file:///C:/Users/Artur/Desktop/Web%20design/Cart.html">
-			<div class="cart">
-				<i class="fas fa-cart-plus">
-					<div class="circle" id="orders">0</div>
-				</i>
+	<div id="wraper">
+		<header>
+			<a href="index.html">
+				<h1>Electronics Store</h1>
+			</a>
+			<a href="cart.html">
+				<div class="cart">
+					<i class="fas fa-cart-plus">
+						<div class="circle" id="orders">0</div>
+					</i>
+				</div>
+			</a>
+		</header>
+		<main>
+			<div id="filter">
+				<p>Введіть діапазон цін</p>
+				<input type="number" id="from" placeholder="Від">
+				<input type="number" id="to" placeholder="До">
+				<button onclick="addFilter()" type="submit">Застосувати</button>
+				<button id="deleteFilter" onclick="fillStorage()">Показати всі</button>
 			</div>
-		</a>
-	</header>
-	<div id="filter">
-		<span>Введіть діапазон цін<input type="number" id="from">
-			<input type="number" id="to">
-			<button onclick="addFilter()" type="submit">Застосувати</button>
-		</span>
-		<button id="deleteFilter" onclick="fillStorage()">Показати всі</button>
+			<div class="list"></div>
+		</main>
+		<footer>
+			<div>
+				<p>Phone:</p>
+				<p>+380678932881</p>
+				<p>+380934773547</p>
+			</div>
+			<div>
+				<p>elmar@svt.org.ua</p>
+				<p>Lviv, Saharova 25</p>
+			</div>
+		</footer>
 	</div>
-	<div class="list"></div>
-	<footer class="info">
-		<div>
-		<p>Phone:</p>
-		<p>+380678932881</p>
-		<p>+380934773547</p>
-	</div>
-		<div>
-		<p>elmar@svt.org.ua</p>
-		<p>Lviv, Saharova 25</p>
-		</div>
-	</footer>
-	<script src="Electronic_store.js"></script>
+	<script src="https://kit.fontawesome.com/89b7791523.js" crossorigin="anonymous"></script>
+	<script src="script/main.js"></script>
 </body>
 
 </html>
