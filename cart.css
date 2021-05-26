@@ -39,7 +39,7 @@
 }
 
 body {
-	background-image: url(WEBRGR/img/background.jpg);
+	background-image: url(./WEBRGR/img/background.jpg);
 	background-position: top-left;
 	background-attachment: fixed;
 }
