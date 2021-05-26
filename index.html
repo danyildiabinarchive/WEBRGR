@@ -11,7 +11,7 @@
 </head>
 
 <body>
-	<div class="header">
+	<header class="header">
 		<h1>Electronics Store</h1>
 		<a href="file:///C:/Users/Artur/Desktop/Web%20design/Cart.html">
 			<div class="cart">
@@ -20,20 +20,26 @@
 				</i>
 			</div>
 		</a>
-	</div>
-	<div class="info">
-		<p> <br> Phone: <br>
-			+380678932881 <br>
-			+380934773547</p>
-		<span>Введіть діапазон ціни <input type="number" id="from">
+	</header>
+	<div id="filter">
+		<span>Введіть діапазон цін<input type="number" id="from">
 			<input type="number" id="to">
-			<button onclick="addFilter()" type="submit">Застосувати</button></span><br>
+			<button onclick="addFilter()" type="submit">Застосувати</button>
+		</span>
 		<button id="deleteFilter" onclick="fillStorage()">Показати всі</button>
-		<p> <br> <br> elmar@svt.org.ua <br>
-			Lviv, Saharova 25
-		</p>
 	</div>
 	<div class="list"></div>
+	<footer class="info">
+		<div>
+		<p>Phone:</p>
+		<p>+380678932881</p>
+		<p>+380934773547</p>
+	</div>
+		<div>
+		<p>elmar@svt.org.ua</p>
+		<p>Lviv, Saharova 25</p>
+		</div>
+	</footer>
 	<script src="Electronic_store.js"></script>
 </body>
 
