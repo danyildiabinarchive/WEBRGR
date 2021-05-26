@@ -131,3 +131,18 @@ body {
 	align-items: center;
 	justify-content: center
 }
+
+  #from, #to{
+      width:100px;
+      height:30px;
+  }
+
+  #deleteFilter{
+      width:120px;
+      height:35px;
+      background-color: gold;
+  }
+
+  .header h1{
+      background-color: gold;
+  }
