@@ -1,35 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LED Lamps Store</title>
-    <script src="https://kit.fontawesome.com/89b7791523.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="Electronic_store.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>LED Lamps Store</title>
+	<script src="https://kit.fontawesome.com/89b7791523.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="Electronic_store.css">
 </head>
+
 <body>
-    <div class="header">
-			<h1>Electronics Store</h1>
-        <a href="file:///C:/Users/Artur/Desktop/Web%20design/Cart.html">
-            <div class="cart">
-                <i class="fas fa-cart-plus"> <div class="circle" id="orders">0</div></i>
-            </div>
-        </a>
-    </div>
-    <div class="info">
-        <p> <br> Phone: <br>
-            +380678932881 <br>
-            +380934773547</p>
-        <span>Введіть діапазон ціни  <input type="number" id="from">
-            <input type="number" id="to"> 
-            <button onclick="addFilter()" type="submit">Застосувати</button></span><br>
-            <button id="deleteFilter" onclick="fillStorage()">Показати всі</button>
-        <p> <br> <br> elmar@svt.org.ua <br>
-            Lviv, Saharova 25 
-        </p>
-    </div>
-    <div class="list"></div>
-    <script src="Electronic_store.js"></script>
+	<div class="header">
+		<h1>Electronics Store</h1>
+		<a href="file:///C:/Users/Artur/Desktop/Web%20design/Cart.html">
+			<div class="cart">
+				<i class="fas fa-cart-plus">
+					<div class="circle" id="orders">0</div>
+				</i>
+			</div>
+		</a>
+	</div>
+	<div class="info">
+		<p> <br> Phone: <br>
+			+380678932881 <br>
+			+380934773547</p>
+		<span>Введіть діапазон ціни <input type="number" id="from">
+			<input type="number" id="to">
+			<button onclick="addFilter()" type="submit">Застосувати</button></span><br>
+		<button id="deleteFilter" onclick="fillStorage()">Показати всі</button>
+		<p> <br> <br> elmar@svt.org.ua <br>
+			Lviv, Saharova 25
+		</p>
+	</div>
+	<div class="list"></div>
+	<script src="Electronic_store.js"></script>
 </body>
+
 </html>
